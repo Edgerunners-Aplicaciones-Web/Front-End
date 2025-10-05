@@ -1,7 +1,10 @@
 {
-  "name": "front",
+  "name": "SmartStay",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+    "description": "A Vue 3 project powered by Vite",
+    "author": "Edgerunners",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

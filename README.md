@@ -1,5 +1,32 @@
-# Vue 3 + Vite
+# Smart Stay
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Smart Stay** is a web application that modernizes hotel management using **digital technologies** and **IoT (Internet of Things)**.  
+The platform connects hotel staff and guests to manage rooms, services, and resources efficiently — providing a smarter and more personalized hotel experience.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## Current Status
+
+**Phase:** Frontend development  
+**Framework:** Vue 3 + Vite  
+**Data Source:** Fake API (for simulation)  
+**UI Libraries:** PrimeVue, PrimeFlex, Material Icons  
+**Other tools:** Axios, Vue Router
+
+---
+
+## Main Features
+
+- Room and guest management
+- Digital check-in/check-out simulation
+- Dynamic room status (available, occupied, maintenance)
+- Basic IoT simulation for temperature and lighting control
+- Responsive interface using PrimeVue and PrimeFlex
+
+---
+
+## Setup Instructions
+
+```bash
+npm install
+npm run dev
