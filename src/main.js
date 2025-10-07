@@ -1,13 +1,11 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './app.vue'
-import {Primevue} from "primevue/config";
+import PrimeVue from 'primevue/config';
 import Material from "@primeuix/themes/material";
-import i18n from "./i18n.js";
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css'
-import router from "./router.js";
-import pinia from "pinia";
+import CustomMaterial from './themes/custom-material.js';
 import {
     Button,
     Card,
@@ -16,11 +14,13 @@ import {
     FloatLabel,
     InputText,
     Password, Toast,
-    ToastService
+    ToastService, Toolbar
 } from "primevue";
 
+// noinspection JSCheckFunctionSignatures
+
 createApp(App)
-    .use(Primevue,{theme:{preset:Material}, ripple:true})
+    .use(PrimeVue, { theme: { preset: CustomMaterial }, ripple: true})
     .use(ConfirmationService)
     .use(DialogService)
     .use(ToastService)
@@ -30,7 +30,5 @@ createApp(App)
     .component('pv-card', Card)
     .component('pv-float-label', FloatLabel)
     .component('pv-toast', Toast)
-    .use(i18n)
-    .use(router)
-    .use(pinia)
+    .component('pv-toolbar', Toolbar)
     .mount('#app')
