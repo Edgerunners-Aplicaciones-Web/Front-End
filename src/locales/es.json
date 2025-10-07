@@ -1,9 +1,9 @@
 {
   "option": {
-    "home": "Inicio",
-    "about": "Nosotros",
-    "categories": "Habitaciones",
-    "tutorials": "Reservas"
+  "home": "Home",
+  "about": "About Us",
+  "rooms": "Habitaciones",
+  "bookings": "Reservas"
   },
   "authoring-phrase": {
     "intro": "Hecho con",

@@ -5,7 +5,8 @@ import PrimeVue from 'primevue/config';
 import Material from "@primeuix/themes/material";
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css'
-import CustomMaterial from './themes/custom-material.js';
+import router from "./router.js";
+
 import {
     Button,
     Card,
@@ -13,14 +14,14 @@ import {
     DialogService,
     FloatLabel,
     InputText,
-    Password, Toast,
+    Password, SelectButton, Toast,
     ToastService, Toolbar
 } from "primevue";
 
 // noinspection JSCheckFunctionSignatures
 
 createApp(App)
-    .use(PrimeVue, { theme: { preset: CustomMaterial }, ripple: true})
+    .use(PrimeVue, { theme: { preset: Material }, ripple: true})
     .use(ConfirmationService)
     .use(DialogService)
     .use(ToastService)
@@ -31,4 +32,6 @@ createApp(App)
     .component('pv-float-label', FloatLabel)
     .component('pv-toast', Toast)
     .component('pv-toolbar', Toolbar)
+    .component('pv-select-button', SelectButton)
+    .use(router)
     .mount('#app')

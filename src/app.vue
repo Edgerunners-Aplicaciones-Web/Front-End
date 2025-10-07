@@ -1,11 +1,12 @@
 <script setup>
-import UserLogin from "./hotel/presentation/view/user-login.vue";
-import UserRegister from "./hotel/presentation/view/user-register.vue";
+import UserLogin from "./hotel/presentation/view/auth/user-login.vue";
+import UserRegister from "./hotel/presentation/view/auth/user-register.vue";
 import Home from "./shared/presentation/view/home.vue";
+import Navbar from "./shared/presentation/components/nabvar.vue";
 </script>
 
 <template>
-  <home></home>
+  <UserLogin/>
 </template>
 
 

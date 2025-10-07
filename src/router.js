@@ -1,14 +1,13 @@
 import home from "./shared/presentation/view/home.vue";
+import { createRouter, createWebHistory } from 'vue-router';
 
-const about = () => import('./shared/presentation/view/about.vue');
-const login = () => import('./hotel/presentation/view/user-login.vue');
-const register = () => import('./hotel/presentation/view/user-register.vue');
+const login = () => import('./hotel/presentation/view/auth/user-login.vue');
+const register = () => import('./hotel/presentation/view/auth/user-register.vue');
 
 const routes = [
   { path: '/home',            name: 'home',           component: home, meta: { title: 'Home' } },
-  { path: '/about',           name: 'about',          component: about, meta: { title: 'About' } },
-  { path: '/login',           name: 'login',          component: login, meta: { title: 'Login' } },
-  { path: '/register',        name: 'register',       component: register, meta: { title: 'Register' } },
+  { path: '/login',           name: 'login',          component: login},
+  { path: '/register',        name: 'register',       component: register},
 ];
 
 
