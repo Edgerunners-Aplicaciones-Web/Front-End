@@ -6,7 +6,7 @@ import Navbar from "./shared/presentation/components/nabvar.vue";
 </script>
 
 <template>
-  <UserLogin/>
+  <Navbar />
 </template>
 
 

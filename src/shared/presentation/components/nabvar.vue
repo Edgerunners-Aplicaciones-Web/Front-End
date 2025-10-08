@@ -1,10 +1,10 @@
 <script setup>
-
+import LanguageSwitcher from "./language-switcher.vue";
 const items = [
-  { label: 'option.home',       to: '/home'},
-  { label: 'option.about',      to: '/about'},
-  { label: 'option.rooms',      to: '/rooms'},
-  { label: 'option.bookings',   to: '/bookings'}
+  { label: 'home',       to: '/home'},
+  { label: 'about',      to: '/about'},
+  { label: 'rooms',      to: '/rooms'},
+  { label: 'bookings',   to: '/bookings'}
 ];
 </script>
 
@@ -17,10 +17,10 @@ const items = [
       <template #end>
         <div class="flex-column mr-3">
           <pv-button v-for="item in items" :key="item.label" as-child v-slot ="slotProps">
-            <router-link :to="item.to" :class="slotProps['class']">{{ t(item.label)}}</router-link>
+            <router-link :to="item.to" :class="slotProps['class']">{{ item.label}}</router-link>
           </pv-button>
         </div>
-        <language-switcher/> 
+        <LanguageSwitcher/> 
       </template>
     </pv-toolbar>
   </div>
